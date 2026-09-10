@@ -2,22 +2,324 @@
 <html lang="fr">
 
 <head>
+
     <meta charset="UTF-8">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Fallou Diouf | Machine Learning Engineer</title>
+
+    <meta
+        name="description"
+        content="Portfolio de Fallou Diouf — Machine Learning Engineer spécialisé en Computer Vision et Deep Learning."
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 
 <body>
 
-    <h1>Fallou Diouf</h1>
+    <!-- Navigation -->
+    <header>
 
-    <h2>Machine Learning Engineer</h2>
+        <nav>
 
-    <p>
-        Computer Vision • Deep Learning • Information Retrieval
-    </p>
+            <a href="#" class="logo">
+                Fallou Diouf
+            </a>
+
+            <div class="nav-links">
+
+                <a href="#about">À propos</a>
+
+                <a href="#projects">Projets</a>
+
+                <a href="#skills">Compétences</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Hero -->
+    <main>
+
+        <section class="hero">
+
+            <div class="hero-content">
+
+                <p class="hero-subtitle">
+                    MACHINE LEARNING ENGINEER
+                </p>
+
+                <h1>
+                    Computer Vision
+                    <br>
+                    & Deep Learning
+                </h1>
+
+                <p class="hero-description">
+
+                    Étudiant en Master 2 Vision & Machine Intelligence
+                    à l'Université Paris Cité, passionné par la
+                    Computer Vision, le Deep Learning et l'Intelligence
+                    Artificielle.
+
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="#projects" class="btn">
+                        Voir mes projets
+                    </a>
+
+                    <a href="#contact" class="btn btn-outline">
+                        Me contacter
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- À propos -->
+        <section id="about">
+
+            <h2>À propos de moi</h2>
+
+            <p>
+                Je suis un étudiant en Master 2 Vision & Machine
+                Intelligence à l'Université Paris Cité, spécialisé
+                en Computer Vision et Deep Learning.
+            </p>
+
+        </section>
+
+
+        <!-- Projets -->
+        <section id="projects">
+
+    <div class="section-header">
+
+        <p class="section-label">
+            PROJETS
+        </p>
+
+        <h2>
+            Projets sélectionnés
+        </h2>
+
+        <p>
+            Des projets personnels réalisés autour de la
+            Computer Vision, du Deep Learning et de la
+            recherche d'information.
+        </p>
+
+    </div>
+
+
+    <div class="projects-grid">
+        <!-- Projet 1 -->
+
+        <article class="project-card">
+            <div class="project-video">
+                <video
+                    controls
+                    muted
+                    loop
+                    playsinline
+                    poster="assets/images/person-tracking.png"
+                >
+                    <source
+                        src="assets/images/person-tracking.mp4"
+                        type="video/mp4"
+                    >
+                    Votre navigateur ne supporte pas la lecture vidéo.
+                </video>
+            </div>
+
+            <div class="project-number">
+                01
+            </div>
+
+            <h3>
+                Person Tracking
+            </h3>
+
+            <p class="project-description">
+
+                Système de détection et de suivi de personnes
+                dans des vidéos utilisant YOLOv8 et DeepSORT.
+                Le projet permet d'identifier chaque personne
+                avec un Track ID et d'analyser ses trajectoires.
+
+            </p>
+
+            <div class="technologies">
+
+                <span>Python</span>
+                <span>YOLOv8</span>
+                <span>DeepSORT</span>
+                <span>OpenCV</span>
+
+            </div>
+
+            <div class="project-links">
+
+                <a
+                    href="https://github.com/Fallou-Diouf/person-tracking-yolov8-deepsort"
+                    target="_blank"
+                >
+                    GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+
+        <!-- Projet 2 -->
+
+        <article class="project-card">
+
+            <div class="project-number">
+                02
+            </div>
+
+            <h3>
+                Self-Supervised Test-Time Training
+            </h3>
+
+            <p class="project-description">
+
+                Approche combinant SimCLR et Vision Transformer
+                pour améliorer la robustesse d'un modèle de
+                classification pendant l'inférence.
+
+            </p>
+
+            <div class="technologies">
+
+                <span>PyTorch</span>
+                <span>SimCLR</span>
+                <span>ViT</span>
+                <span>TTT</span>
+
+            </div>
+
+            <div class="project-links">
+
+                <a
+                    href="https://github.com/Fallou-Diouf/SelfSupervised-TTT-ImageClassification"
+                    target="_blank"
+                >
+                    GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+        <!-- Projet 3 -->
+
+        <article class="project-card">
+
+            <div class="project-image">
+
+                <img
+                    src="assets/images/currency-vision.png"
+                    alt="Résultat de détection de pièces avec CurrencyVision"
+                >
+
+            </div>
+
+            <div class="project-number">
+                03
+            </div>
+
+            <h3>
+                CurrencyVision
+            </h3>
+
+            <p class="project-description">
+
+                Projet académique de vision par ordinateur permettant
+                de détecter, compter et identifier des pièces en euro
+                à partir d'images acquises par smartphone.
+
+            </p>
+
+            <div class="technologies">
+
+                <span>Python</span>
+                <span>OpenCV</span>
+                <span>Matplotlib</span>
+                <span>Pandas</span>
+            </div>
+
+            <div class="project-links">
+
+                <a
+                    href="https://github.com/Fallou-Diouf/Currency_Vision"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    GitHub →
+                </a>
+
+            </div>
+
+        </article>
+
+        </article>
+
+
+    </div>
+
+</section>
+
+
+        <!-- Compétences -->
+        <section id="skills">
+
+            <h2>Compétences</h2>
+
+            <p>
+                Python · PyTorch · OpenCV · YOLO · Deep Learning
+            </p>
+
+        </section>
+
+
+        <!-- Contact -->
+        <section id="contact">
+
+            <h2>Contact</h2>
+
+            <p>
+                Je suis actuellement à la recherche d'un stage
+                de fin d'études en Computer Vision / Machine Learning.
+            </p>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Fallou Diouf
+        </p>
+
+    </footer>
 
 </body>
 

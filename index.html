@@ -29,13 +29,17 @@
                 Fallou Diouf
             </a>
 
+            <button class="menu-toggle" aria-label="Ouvrir le menu">
+                ☰
+            </button>
+
             <div class="nav-links">
 
-                <a href="#about">À propos</a>
+                <a href="#about">About</a>
 
-                <a href="#projects">Projets</a>
+                <a href="#projects">Projects</a>
 
-                <a href="#skills">Compétences</a>
+                <a href="#skills">Skills</a>
 
                 <a href="#contact">Contact</a>
 
@@ -65,21 +69,19 @@
 
                 <p class="hero-description">
 
-                    Étudiant en Master 2 Vision & Machine Intelligence
-                    à l'Université Paris Cité, passionné par la
-                    Computer Vision, le Deep Learning et l'Intelligence
-                    Artificielle.
-
+                    Master's student in Vision & Machine Intelligence
+                    at Université Paris Cité, passionate about
+                    Computer Vision, Deep Learning, and Artificial Intelligence.
                 </p>
 
                 <div class="hero-buttons">
 
                     <a href="#projects" class="btn">
-                        Voir mes projets
+                        Explore my projects
                     </a>
 
                     <a href="#contact" class="btn btn-outline">
-                        Me contacter
+                        Contact me
                     </a>
 
                 </div>
@@ -89,238 +91,944 @@
         </section>
 
 
-        <!-- À propos -->
+        <!-- About -->
         <section id="about">
 
-            <h2>À propos de moi</h2>
+            <div class="section-header">
 
-            <p>
-                Je suis un étudiant en Master 2 Vision & Machine
-                Intelligence à l'Université Paris Cité, spécialisé
-                en Computer Vision et Deep Learning.
-            </p>
+                <p class="section-label">
+                    ABOUT
+                </p>
+
+                <h2>
+                    About Me
+                </h2>
+
+            </div>
+
+            <div class="about-content">
+
+                <p>
+                    Master's student in Vision & Machine Intelligence at Université Paris Cité,
+                    passionate about Computer Vision, Deep Learning, and Artificial Intelligence.
+                </p>
+
+                <p>
+                    I started with backend development and databases before moving into Machine Learning,
+                    where I discovered my passion for Computer Vision and teaching machines to understand visual data.
+                </p>
+
+                <p>
+                    I build robust computer vision systems and deep learning models, turning research
+                    ideas into practical solutions for real-world applications.
+                </p>
+
+            </div>
+
+            </div>
 
         </section>
-
 
         <!-- Projets -->
         <section id="projects">
 
-    <div class="section-header">
+            <div class="section-header">
 
-        <p class="section-label">
-            PROJETS
-        </p>
+                <p class="section-label">
+                    PROJECTS
+                </p>
 
-        <h2>
-            Projets sélectionnés
-        </h2>
+                <h2>
+                    Selected Projects
+                </h2>
 
-        <p>
-            Des projets personnels réalisés autour de la
-            Computer Vision, du Deep Learning et de la
-            recherche d'information.
-        </p>
-
-    </div>
-
-
-    <div class="projects-grid">
-        <!-- Projet 1 -->
-
-        <article class="project-card">
-            <div class="project-video">
-                <video
-                    controls
-                    muted
-                    loop
-                    playsinline
-                    poster="assets/images/person-tracking.png"
-                >
-                    <source
-                        src="assets/images/person-tracking.mp4"
-                        type="video/mp4"
-                    >
-                    Votre navigateur ne supporte pas la lecture vidéo.
-                </video>
+                <p>
+                    Personal projects focused on
+                    Computer Vision, Deep Learning, and
+                    Information Retrieval.
+                </p>
             </div>
 
-            <div class="project-number">
-                01
+            <div class="projects-grid">
+
+                <!-- Project 01 — CurrencyVision & AlexNet -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/images/currency-vision.png"
+                            alt="Detection and classification of euro coins"
+                        >
+
+                    </div>
+
+                    <div class="project-number">
+                        01
+                    </div>
+
+                    <h3>
+                        CurrencyVision — Coin Detection & Classification
+                    </h3>
+
+                    <p class="project-description">
+
+                        Computer vision project focused on analyzing euro coins
+                        from images captured with a smartphone.
+
+                        The first approach uses classical image processing
+                        methods to detect, count, and identify coins.
+                        A second approach applies <strong>Deep Learning</strong>
+                        and <strong>Transfer Learning</strong> with
+                        <strong>AlexNet</strong> pre-trained on ImageNet
+                        for coin classification.
+
+                    </p>
+
+                    <div class="technologies">
+
+                        <span>Python</span>
+                        <span>OpenCV</span>
+                        <span>PyTorch</span>
+                        <span>AlexNet</span>
+                        <span>Transfer Learning</span>
+                        <span>Deep Learning</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/Fallou-Diouf/Currency_Vision"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub 1 →
+                        </a>
+
+                        <a
+                            href="https://github.com/Fallou-Diouf/DL4CV_Coin_classification"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub 2 →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 02 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/images/bdshape.png"
+                            alt="BDshape dataset for shape recognition"
+                        >
+
+                    </div>
+
+                    <div class="project-number">
+                        02
+                    </div>
+
+                    <h3>
+                        BDshape — Shape Recognition & Classification
+                    </h3>
+
+                    <p class="project-description">
+
+                        Comparative study of shape description and classification
+                        methods on a complex dataset containing 9 classes.
+                        The project combines supervised and unsupervised approaches
+                        to analyze the impact of different shape descriptors.
+
+                    </p>
+
+                    <div class="project-results">
+
+                        <div class="result-item">
+                            <span class="result-value">89%</span>
+                            <span class="result-label">KNN Accuracy</span>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-value">80%</span>
+                            <span class="result-label">K-Means ARI</span>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-value">91%</span>
+                            <span class="result-label">Majority Voting</span>
+                        </div>
+
+                    </div>
+
+                    <div class="technologies">
+
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>KNN</span>
+                        <span>K-Means</span>
+                        <span>PCA</span>
+                        <span>Shape Descriptors</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/Fallou-Diouf/Reconnaissance-de-Forme"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 03 -->
+                <article class="project-card">
+
+                    <div class="project-video">
+
+                        <video
+                            controls
+                            muted
+                            loop
+                            playsinline
+                            poster="assets/images/person-tracking.png"
+                        >
+                            <source
+                                src="assets/images/person-tracking.mp4"
+                                type="video/mp4"
+                            >
+                            Your browser does not support video playback.
+                        </video>
+
+                    </div>
+
+                    <div class="project-number">
+                        03
+                    </div>
+
+                    <h3>
+                        Person Tracking with YOLOv8 & DeepSORT
+                    </h3>
+
+                    <p class="project-description">
+
+                        Computer vision system for detecting and tracking people
+                        in videos using YOLOv8 and DeepSORT.
+                        The project assigns a unique Track ID to each person
+                        and allows their trajectories to be analyzed over time.
+
+                    </p>
+
+                    <div class="technologies">
+
+                        <span>Python</span>
+                        <span>YOLOv8</span>
+                        <span>DeepSORT</span>
+                        <span>OpenCV</span>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/Fallou-Diouf/person-tracking-yolov8-deepsort"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 04 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+
+                        <img
+                            src="assets/images/ttt-cifar10c-impact.png"
+                            alt="Impact of Test-Time Training on CIFAR-10-C"
+                        >
+
+                    </div>
+
+                    <div class="project-number">
+                        04
+                    </div>
+
+                    <h3>
+                        Self-Supervised Test-Time Training for Image Classification
+                    </h3>
+
+                    <p class="project-description">
+
+                        Approach combining SimCLR and Vision Transformer
+                        to improve the robustness of an image classification
+                        model during inference.
+
+                    </p>
+
+                    <div class="technologies">
+
+                        <span>Python</span>
+                        <span>PyTorch</span>
+                        <span>SimCLR</span>
+                        <span>Vision Transformer</span>
+                        <span>Self-Supervised Learning</span>
+
+                    </div>
+
+                    <div class="project-results">
+
+                        <div class="result-item">
+
+                            <span class="result-value">
+                                90.08%
+                            </span>
+
+                            <span class="result-label">
+                                Accuracy
+                            </span>
+
+                        </div>
+
+                        <div class="result-item">
+
+                            <span class="result-value">
+                                +0.39
+                            </span>
+
+                            <span class="result-label">
+                                CIFAR-10-C
+                            </span>
+
+                        </div>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/Fallou-Diouf/SelfSupervised-TTT-ImageClassification"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub →
+                        </a>
+
+                    </div>
+
+                </article>
+
+                <!-- Project 05 -->
+                <article class="project-card">
+
+                    <div class="project-image">
+                        <img
+                            src="assets/images/information-retrieval.png"
+                            alt="Information Retrieval Engine results"
+                        >
+                    </div>
+
+                    <div class="project-number">
+                        05
+                    </div>
+
+                    <h3>
+                        Information Retrieval Engine
+                    </h3>
+
+                    <p class="project-description">
+
+                        Data Science project focused on building an
+                        information retrieval engine for ranking relevant
+                        documents from user queries.
+
+                        The project compares classical retrieval methods
+                        such as <strong>TF-IDF</strong> and <strong>BM25+</strong>
+                        with semantic <strong>text embeddings</strong>.
+                        A classification and reranking stage is also used
+                        to improve retrieval performance.
+
+                    </p>
+
+                    <div class="technologies">
+
+                        <span>Python</span>
+                        <span>Scikit-learn</span>
+                        <span>TF-IDF</span>
+                        <span>BM25+</span>
+                        <span>BGE Embeddings</span>
+                        <span>RRF</span>
+                        <span>Information Retrieval</span>
+
+                    </div>
+
+                    <div class="project-results">
+
+                        <div class="result-item">
+                            <span class="result-value">70.76%</span>
+                            <span class="result-label">Recall@20</span>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-value">52.02%</span>
+                            <span class="result-label">MRR</span>
+                        </div>
+
+                        <div class="result-item">
+                            <span class="result-value">30.6 ms</span>
+                            <span class="result-label">Latency</span>
+                        </div>
+
+                    </div>
+
+                    <div class="project-links">
+
+                        <a
+                            href="https://github.com/Fallou-Diouf/InformationRetrieval"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub →
+                        </a>
+
+                    </div>
+
+                </article>    
             </div>
+        </section>
 
-            <h3>
-                Person Tracking
-            </h3>
-
-            <p class="project-description">
-
-                Système de détection et de suivi de personnes
-                dans des vidéos utilisant YOLOv8 et DeepSORT.
-                Le projet permet d'identifier chaque personne
-                avec un Track ID et d'analyser ses trajectoires.
-
-            </p>
-
-            <div class="technologies">
-
-                <span>Python</span>
-                <span>YOLOv8</span>
-                <span>DeepSORT</span>
-                <span>OpenCV</span>
-
-            </div>
-
-            <div class="project-links">
-
-                <a
-                    href="https://github.com/Fallou-Diouf/person-tracking-yolov8-deepsort"
-                    target="_blank"
-                >
-                    GitHub →
-                </a>
-
-            </div>
-
-        </article>
-
-
-        <!-- Projet 2 -->
-
-        <article class="project-card">
-
-            <div class="project-number">
-                02
-            </div>
-
-            <h3>
-                Self-Supervised Test-Time Training
-            </h3>
-
-            <p class="project-description">
-
-                Approche combinant SimCLR et Vision Transformer
-                pour améliorer la robustesse d'un modèle de
-                classification pendant l'inférence.
-
-            </p>
-
-            <div class="technologies">
-
-                <span>PyTorch</span>
-                <span>SimCLR</span>
-                <span>ViT</span>
-                <span>TTT</span>
-
-            </div>
-
-            <div class="project-links">
-
-                <a
-                    href="https://github.com/Fallou-Diouf/SelfSupervised-TTT-ImageClassification"
-                    target="_blank"
-                >
-                    GitHub →
-                </a>
-
-            </div>
-
-        </article>
-
-        <!-- Projet 3 -->
-
-        <article class="project-card">
-
-            <div class="project-image">
-
-                <img
-                    src="assets/images/currency-vision.png"
-                    alt="Résultat de détection de pièces avec CurrencyVision"
-                >
-
-            </div>
-
-            <div class="project-number">
-                03
-            </div>
-
-            <h3>
-                CurrencyVision
-            </h3>
-
-            <p class="project-description">
-
-                Projet académique de vision par ordinateur permettant
-                de détecter, compter et identifier des pièces en euro
-                à partir d'images acquises par smartphone.
-
-            </p>
-
-            <div class="technologies">
-
-                <span>Python</span>
-                <span>OpenCV</span>
-                <span>Matplotlib</span>
-                <span>Pandas</span>
-            </div>
-
-            <div class="project-links">
-
-                <a
-                    href="https://github.com/Fallou-Diouf/Currency_Vision"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                >
-                    GitHub →
-                </a>
-
-            </div>
-
-        </article>
-
-        </article>
-
-
-    </div>
-
-</section>
-
-
-        <!-- Compétences -->
+        <!-- Skills -->
         <section id="skills">
 
-            <h2>Compétences</h2>
+            <div class="section-header">
 
-            <p>
-                Python · PyTorch · OpenCV · YOLO · Deep Learning
-            </p>
+                <p class="section-label">
+                    SKILLS
+                </p>
+
+                <h2>
+                    Technologies & Expertise
+                </h2>
+
+            </div>
+
+
+            <div class="skills-grid">
+
+
+                <!-- Computer Vision & Image Processing -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        Computer Vision & Image Processing
+                    </h3>
+
+                    <ul>
+
+                        <li>Object Detection (YOLOv8)</li>
+
+                        <li>Object Tracking</li>
+
+                        <li>Image Segmentation</li>
+
+                        <li>Image Classification</li>
+
+                        <li>Shape Recognition</li>
+
+                        <li>Video Analysis</li>
+
+                        <li>3D Reconstruction</li>
+
+                        <li>Image Filtering & Denoising</li>
+
+                        <li>Feature Extraction</li>
+
+                        <li>Image Dataset Curation</li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Deep Learning & Artificial Intelligence -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        Deep Learning & Artificial Intelligence
+                    </h3>
+
+                    <ul>
+
+                        <li>PyTorch</li>
+
+                        <li>TensorFlow</li>
+
+                        <li>CNN Architectures</li>
+
+                        <li>AlexNet, ResNet, DenseNet, ConvNeXt</li>
+
+                        <li>Vision Transformers</li>
+
+                        <li>Self-Supervised Learning</li>
+
+                        <li>Transfer Learning</li>
+
+                        <li>Model Optimization & Distillation</li>
+
+                        <li>Embeddings & Image Retrieval</li>
+
+                        <li>RAG & LangChain</li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Machine Learning & Data Science -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        Machine Learning & Data Science
+                    </h3>
+
+                    <ul>
+
+                        <li>Classification</li>
+
+                        <li>Regression</li>
+
+                        <li>Clustering</li>
+
+                        <li>Scikit-learn</li>
+
+                        <li>NumPy</li>
+
+                        <li>Pandas</li>
+
+                        <li>Matplotlib & Seaborn</li>
+
+                        <li>Jupyter</li>
+
+                        <li>Statistical Evaluation & Testing</li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Software Engineering & Infrastructure -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        Software Engineering & Infrastructure
+                    </h3>
+
+                    <ul>
+
+                        <li>Python</li>
+
+                        <li>C / C++</li>
+
+                        <li>HTML / CSS</li>
+
+                        <li>JavaScript</li>
+
+                        <li>FastAPI</li>
+
+                        <li>Django</li>
+
+                        <li>Git / GitHub</li>
+
+                        <li>Docker</li>
+
+                        <li>Linux</li>
+
+                        <li>PostgreSQL / SQL</li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- Data Engineering & R&D -->
+
+                <div class="skill-card">
+
+                    <h3>
+                        Data Engineering & R&D
+                    </h3>
+
+                    <ul>
+
+                        <li>PySpark</li>
+
+                        <li>ETL Pipelines</li>
+
+                        <li>Data Manipulation</li>
+
+                        <li>State-of-the-Art Research</li>
+
+                        <li>Technical Literature Review</li>
+
+                        <li>Research Implementation</li>
+
+                        <li>Validation & Statistical Testing</li>
+
+                        <li>Technical Documentation</li>
+
+                        <li>Jupyter Notebooks</li>
+
+                        <li>Flow Diagrams & Commented Code</li>
+
+                    </ul>
+
+                </div>
+
+
+            </div>
+
+        </section>
+        
+        <!-- Education -->
+        <section id="education">
+
+            <div class="section-header">
+
+                <p class="section-label">
+                    EDUCATION
+                </p>
+
+                <h2>
+                    Academic Background
+                </h2>
+
+            </div>
+
+
+            <div class="education-list">
+
+                <!-- Master's 2 -->
+
+                <div class="education-item">
+
+                    <div class="education-year">
+                        2026 — 2027
+                    </div>
+
+                    <div class="education-content">
+
+                        <h3>
+                            Master's 2 — Vision and Machine Intelligence
+                        </h3>
+
+                        <p>
+                            Université Paris Cité
+                        </p>
+
+                        <span>
+                            Deep Learning · Machine Learning · Computer Vision ·
+                            Generative AI · Data Science · 3D Imaging · Image Analysis ·
+                            Video Analysis · Shape Recognition
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Master's 1 Vision -->
+
+                <div class="education-item">
+
+                    <div class="education-year">
+                        2025 — 2026
+                    </div>
+
+                    <div class="education-content">
+
+                        <h3>
+                            Master's 1 — Vision and Machine Intelligence
+                        </h3>
+
+                        <p>
+                            Université Paris Cité
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Master's 1 Data -->
+
+                <div class="education-item">
+
+                    <div class="education-year">
+                        2023 — 2024
+                    </div>
+
+                    <div class="education-content">
+
+                        <h3>
+                            Master's 1 — Data Engineering and Software Engineering
+                        </h3>
+
+                        <p>
+                            Université Gaston Berger — Senegal
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Bachelor's Degree -->
+
+                <div class="education-item">
+
+                    <div class="education-year">
+                        2020 — 2023
+                    </div>
+
+                    <div class="education-content">
+
+                        <h3>
+                            Bachelor's Degree in Computer Science — Information Systems
+                        </h3>
+
+                        <p>
+                            Université Gaston Berger — Senegal
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
+        <!-- Internship -->
+        <section id="internship">
 
-        <!-- Contact -->
-        <section id="contact">
+            <div class="section-header">
 
-            <h2>Contact</h2>
+                <p class="section-label">
+                    OPPORTUNITY
+                </p>
 
-            <p>
-                Je suis actuellement à la recherche d'un stage
-                de fin d'études en Computer Vision / Machine Learning.
-            </p>
+                <h2>
+                    Looking for an Internship
+                </h2>
+
+            </div>
+
+            <div class="internship-content">
+
+                <p class="internship-intro">
+
+                    I am currently a Master's student in Vision and Machine Intelligence
+                    at Université Paris Cité, looking for a 4 to 6-month final-year internship
+                    in Computer Vision, Deep Learning, Machine Learning, or Data & IA.
+
+                </p>
+
+                <div class="internship-grid">
+
+                    <div class="internship-item">
+
+                        <span>TYPE</span>
+
+                        <strong>
+                            4 to 6-month final-year internship
+                        </strong>
+
+                    </div>
+
+                    <div class="internship-item">
+
+                        <span>FIELD</span>
+
+                        <strong>
+                            Computer Vision · Deep Learning · Machine Learning · Data & AI
+                        </strong>
+
+                    </div>
+
+                    <div class="internship-item">
+
+                        <span>LEVEL</span>
+
+                        <strong>
+                            Master's Degree — Year 2
+                        </strong>
+
+                    </div>
+
+                </div>
+
+                <div class="internship-actions">
+
+                    <a href="#contact" class="btn">
+                        Contact me
+                    </a>
+
+                    <button
+                        class="btn btn-outline"
+                        id="cv-button"
+                        type="button"
+                    >
+                        View my CV
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- CV Language Selection Modal -->
+            <div class="cv-modal" id="cv-modal">
+
+                <div class="cv-modal-content">
+
+                    <button
+                        class="cv-close"
+                        id="cv-close"
+                        type="button"
+                        aria-label="Close"
+                    >
+                        &times;
+                    </button>
+
+                    <h3>
+                        Choose your CV
+                    </h3>
+
+                    <p>
+                        Select the language you prefer.
+                    </p>
+
+                    <div class="cv-options">
+
+                        <a
+                            href="assets/cv/CV_Fallou_Diouf_EN.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="cv-option"
+                        >
+                            🇬🇧
+                            <span>English CV</span>
+                        </a>
+
+                        <a
+                            href="assets/cv/CV_Fallou_Diouf_FR.pdf"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="cv-option"
+                        >
+                            🇫🇷
+                            <span>French CV</span>
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
-    </main>
+    
+            <!-- Contact -->
+
+            <section id="contact">
+
+                <div class="section-header">
+
+                    <p class="section-label">
+                        CONTACT
+                    </p>
+
+                    <h2>
+                        Let's Work Together
+                    </h2>
+
+                </div>
 
 
-    <footer>
+                <div class="contact-content">
 
-        <p>
-            © 2026 Fallou Diouf
-        </p>
+                    <p>
+                        Do you have an internship opportunity in
+                        Computer Vision, Machine Learning, or Deep Learning?
+                    </p>
 
-    </footer>
+                    <p>
+                        Feel free to contact me to discuss
+                        an opportunity or a project.
+                    </p>
 
-</body>
 
+                    <div class="contact-links">
+
+                        <a
+                            href="https://mail.google.com/mail/?view=cm&fs=1&to=fallou.fadal.diouf4@gmail.com"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            Email →
+                        </a>
+
+                        <a
+                            href="https://www.linkedin.com/in/fallou-diouf/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn →
+                        </a>
+
+                        <a
+                            href="https://github.com/Fallou-Diouf?tab=repositories"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            GitHub →
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+        <footer>
+
+            <p>
+                © 2026 Fallou Diouf
+            </p>
+
+        </footer> 
+        
+        <script src="js/script.js"></script>
+    </body>
 </html>
